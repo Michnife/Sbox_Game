@@ -1,0 +1,141 @@
+{
+  "RootObject": {
+    "Id": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+    "Name": "player",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "CharacterController",
+        "Acceleration": 10,
+        "Bounciness": 0.3,
+        "GroundAngle": 45,
+        "Height": 64,
+        "IgnoreLayers": "",
+        "Radius": 16,
+        "StepHeight": 18
+      },
+      {
+        "__type": "CitizenAnimationHelper",
+        "BodyWeight": 1,
+        "EyeSource": null,
+        "EyesWeight": 1,
+        "HeadWeight": 1,
+        "Height": 1,
+        "IkLeftFoot": null,
+        "IkLeftHand": null,
+        "IkRightFoot": null,
+        "IkRightHand": null,
+        "LookAt": null,
+        "LookAtEnabled": false,
+        "Target": {
+          "_type": "component",
+          "go": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+          "component_type": "SkinnedModelRenderer"
+        }
+      },
+      {
+        "__type": "SkinnedModelRenderer",
+        "AnimationGraph": null,
+        "BodyGroups": 341,
+        "BoneMergeTarget": null,
+        "CreateBoneObjects": false,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/citizen/citizen.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "SnotPlayer",
+        "Animator": {
+          "_type": "component",
+          "go": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+          "component_type": "CitizenAnimationHelper"
+        },
+        "Camera": {
+          "_type": "gameobject",
+          "go": "8ccdf795-7a36-44b6-8868-b0789bcc0d2c"
+        },
+        "Controller": {
+          "_type": "component",
+          "go": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+          "component_type": "CharacterController"
+        },
+        "EyePosition": "0,0,61.79993",
+        "JumpStrength": 400,
+        "RunSpeed": 250,
+        "WalkSpeed": 120
+      }
+    ],
+    "Children": [
+      {
+        "Id": "8ccdf795-7a36-44b6-8868-b0789bcc0d2c",
+        "Name": "Camera",
+        "Position": "-180.2058,18.88078,95.56728",
+        "Rotation": "-0.002449465,0.08451318,0.02886777,0.9960011",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "CameraComponent",
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 61.52,
+            "IsMainCamera": true,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "Priority": 1,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "Viewport": "0,0,1,1",
+            "ZFar": 10000,
+            "ZNear": 0.1
+          },
+          {
+            "__type": "Bloom",
+            "BloomColor": {
+              "color": [
+                {
+                  "c": "1,1,1,1"
+                },
+                {
+                  "t": 1,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "BloomCurve": [
+              {
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "Mode": "Additive",
+            "Strength": 0.5,
+            "Threshold": 0.5,
+            "ThresholdWidth": 0.5
+          },
+          {
+            "__type": "Tonemapping",
+            "ExposureCompensation": 0,
+            "MaximumExposure": 2,
+            "MinimumExposure": 1,
+            "Rate": 1
+          },
+          {
+            "__type": "Sharpen",
+            "Scale": 0.2
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
