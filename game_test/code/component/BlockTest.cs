@@ -14,7 +14,6 @@ public sealed class BlockTest : Component
 	{
 		if (Input.Pressed("Run"))
         {
-			Log.Info("Test");
         }
 	}
 
