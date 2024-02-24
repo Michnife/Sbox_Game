@@ -61,28 +61,27 @@
           "GroupName": "Movement"
         },
         {
-          "Name": "Run",
-          "KeyboardCode": "shift",
-          "GamepadCode": "LeftJoystickButton",
-          "GroupName": "Movement"
-        },
-        {
           "Name": "Duck",
           "KeyboardCode": "ctrl",
           "GamepadCode": "B",
           "GroupName": "Movement"
         },
         {
-          "Name": "attack1",
+          "Name": "Punch",
           "KeyboardCode": "mouse1",
           "GamepadCode": "RightTrigger",
           "GroupName": "Actions"
         },
         {
-          "Name": "attack2",
+          "Name": "Grab",
           "KeyboardCode": "mouse2",
           "GamepadCode": "LeftTrigger",
           "GroupName": "Actions"
+        },
+        {
+          "Name": "Run",
+          "KeyboardCode": "SHIFT",
+          "GroupName": "Other"
         }
       ]
     }

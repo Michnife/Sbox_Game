@@ -155,20 +155,9 @@
         },
         {
           "__type": "SnotPlayer",
-          "Animator": {
-            "_type": "component",
-            "go": "aa14cc09-f16d-4aed-af66-63825f3cf72f",
-            "component_type": "CitizenAnimationHelper"
-          },
-          "Camera": {
-            "_type": "gameobject",
-            "go": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a"
-          },
-          "Controller": {
-            "_type": "component",
-            "go": "aa14cc09-f16d-4aed-af66-63825f3cf72f",
-            "component_type": "CharacterController"
-          },
+          "Animator": null,
+          "Camera": null,
+          "Controller": null,
           "JumpStrength": 400,
           "RunSpeed": 250,
           "WalkSpeed": 120
@@ -265,6 +254,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-02-24T20:12:30.0071935\u002B01:00",
+  "LastSaved": "2024-02-24T21:16:22.9275697\u002B01:00",
   "__references": []
 }
