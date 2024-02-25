@@ -2,17 +2,37 @@
 @using Sandbox.UI;
 @inherits PanelComponent
 
-<root>
-	<div class="title">@MyStringValue</div>
+<root class="@(IsPaused ? "" : "hide")">
+	<div class="option">
+		<h2>Paused</h2>
+		<di class="button" onclick=@OnResume>
+			Resume
+		</di>
+		<div class="button sfx">
+			Play Sound
+		</div>
+	</div>
 </root>
 
 @code
 {
+	public bool IsPaused { get; set; }
 
-	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+	protected override void OnUpdate()
+	{
+		base.OnUpdate();
 
-	/// <summary>
-	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
-	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+		if(Input.EscapePressed)
+		{
+			IsPaused = !IsPaused;
+		}
+
+		Scene.TimeScale = IsPaused ? 0 : 1;
+	}
+
+	void OnResume()
+	{
+		IsPaused = false;
+	}
+	protected override int BuildHash() => System.HashCode.Combine( IsPaused);
 }
