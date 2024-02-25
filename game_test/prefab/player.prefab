@@ -1,7 +1,8 @@
 {
   "RootObject": {
-    "Id": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+    "Id": "42b82b65-516c-4061-94d5-a70fbcc813bf",
     "Name": "player",
+    "Rotation": "0,-0,-0.000002200879,1",
     "Enabled": true,
     "Components": [
       {
@@ -29,7 +30,7 @@
         "LookAtEnabled": false,
         "Target": {
           "_type": "component",
-          "go": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+          "go": "42b82b65-516c-4061-94d5-a70fbcc813bf",
           "component_type": "SkinnedModelRenderer"
         }
       },
@@ -49,27 +50,37 @@
         "__type": "SnotPlayer",
         "Animator": {
           "_type": "component",
-          "go": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+          "go": "42b82b65-516c-4061-94d5-a70fbcc813bf",
           "component_type": "CitizenAnimationHelper"
         },
         "Camera": {
           "_type": "gameobject",
-          "go": "8ccdf795-7a36-44b6-8868-b0789bcc0d2c"
+          "go": "cde19962-b070-42ad-b04a-b202c24bc8d8"
         },
         "Controller": {
           "_type": "component",
-          "go": "ae81fbd7-1fb7-4de2-b1bb-ae94358076ab",
+          "go": "42b82b65-516c-4061-94d5-a70fbcc813bf",
           "component_type": "CharacterController"
         },
         "EyePosition": "0,0,61.79993",
         "JumpStrength": 400,
+        "PunchCooldown": 1,
+        "PunchRange": 90,
+        "PunchStrength": 2,
         "RunSpeed": 250,
         "WalkSpeed": 120
+      },
+      {
+        "__type": "UnitInfo",
+        "HealthRegenAmount": 0.5,
+        "HealthRegenTimer": 3,
+        "MaxHealth": 5,
+        "Team": "Player"
       }
     ],
     "Children": [
       {
-        "Id": "8ccdf795-7a36-44b6-8868-b0789bcc0d2c",
+        "Id": "cde19962-b070-42ad-b04a-b202c24bc8d8",
         "Name": "Camera",
         "Position": "-180.2058,18.88078,95.56728",
         "Rotation": "-0.002449465,0.08451318,0.02886777,0.9960011",

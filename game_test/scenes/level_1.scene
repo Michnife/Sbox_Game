@@ -56,6 +56,21 @@
           "SkyColor": "0.2532,0.32006,0.35349,1"
         }
       ]
+    },
+    {
+      "Id": "42b82b65-516c-4061-94d5-a70fbcc813bf",
+      "Name": "GameObject",
+      "Position": "26.80461,-88.39737,64.00003",
+      "Rotation": "0,-0,-0.721154,0.6927748",
+      "Enabled": true,
+      "__Prefab": "prefab/player.prefab"
+    },
+    {
+      "Id": "3f951a10-7c40-44ff-9d3c-b8a306d11629",
+      "Name": "GameObject (1)",
+      "Position": "-51.348,-618.1733,1.565102",
+      "Enabled": true,
+      "__Prefab": "prefab/snot.prefab"
     }
   ],
   "SceneProperties": {
@@ -81,6 +96,6 @@
   },
   "Title": "level_1",
   "Description": "",
-  "LastSaved": "2024-02-24T23:34:09.5460753\u002B01:00",
+  "LastSaved": "2024-02-25T15:22:51.5268483\u002B01:00",
   "__references": []
 }
