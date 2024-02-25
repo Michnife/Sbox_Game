@@ -44,8 +44,8 @@ public sealed class SnotPlayer : Component
 	/// </summary>
 	[Property]
 	[Category( "Stats" )]
-	[Range( 0f, 5f, 0.1f )]
-	public float PunchStrength { get; set; } = 1f;
+	[Range( 0f, 100f, 1f )]
+	public float PunchStrength { get; set; } = 25f;
 
 	/// <summary>
 	/// How many seconds before you can punch again

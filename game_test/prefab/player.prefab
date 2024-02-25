@@ -2,7 +2,6 @@
   "RootObject": {
     "Id": "42b82b65-516c-4061-94d5-a70fbcc813bf",
     "Name": "player",
-    "Rotation": "0,-0,-0.000002200879,1",
     "Enabled": true,
     "Components": [
       {
@@ -63,7 +62,7 @@
           "component_type": "CharacterController"
         },
         "EyePosition": "0,0,61.79993",
-        "JumpStrength": 400,
+        "JumpStrength": 410,
         "PunchCooldown": 1,
         "PunchRange": 90,
         "PunchStrength": 1,
@@ -72,10 +71,17 @@
       },
       {
         "__type": "UnitInfo",
+        "Armor": 49,
+        "Coin": 0,
         "DelayDeath": 0,
+        "Health": 50,
         "HealthRegenAmount": 0.5,
         "HealthRegenTimer": 3,
-        "MaxHealth": 5,
+        "Inventory": [
+          "weapon_pistol"
+        ],
+        "MaxArmor": 100,
+        "MaxHealth": 100,
         "Team": "Player"
       }
     ],

@@ -1,0 +1,94 @@
+PlayerHud
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: Poppins;
+	font-size: 24px;
+
+	> .vitals
+	{
+		border-radius: 10px 10px;
+		padding-left: 10px;
+		background-color: black;
+		width: 150px;
+		align-items: center;
+		position: absolute;
+		bottom: 125px;
+		left: 32px;
+		font-size: 46px;
+		font-weight: bold;
+		color: white;
+		flex-direction: row;
+		
+	}
+
+	> .healthbars
+	{
+		border-radius: 0px 10px;
+		background-color: black;
+		padding: 10px;
+		position: absolute;
+		bottom: 32px;
+		left: 32px;
+		flex-direction: column;
+
+		> .healthbar
+		{
+			width: 500px;
+			height: 64px;
+			background-color: rgb(27, 27, 27);
+			padding: 8px;
+			> .inner
+			{
+				background-color: white;
+				flex-grow:  1;
+				> .fill
+				{
+					height: 100%;
+					background-color: red;
+				}
+			}
+			&.armor
+			{
+				height: 25px;
+				> .inner
+				{
+					> .fill
+					{
+						background-color: black;
+					}
+				}
+			}
+		}
+	}
+
+	> .hotbar
+	{
+		position: absolute;
+		bottom: 32px;
+		width: 100%;
+		z-index: 1;
+		gap: 8px;
+		justify-content: center;
+		align-items: flex-end;
+
+		> .slot
+		{
+			width: 64px;
+			height: 64px;
+			background-color: black;
+			border-radius: 10px;
+			transition: all 0.2s ease;
+
+			&.active
+			{
+				background-color: white;
+				width: 86px;
+				height: 86px;
+			}
+		}
+	}
+}

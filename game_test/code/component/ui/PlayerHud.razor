@@ -1,0 +1,46 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="vitals">
+		<i>paid</i>
+		<p> @Player.Coin</p>
+	</div>
+
+	<div class="healthbars">
+		<div class="healthbar">
+			<div class="inner">
+				<div class="fill" style="width: @(Player.Health / Player.MaxHealth * 100f)%"></div>
+			</div>
+		</div>
+
+		<div class="healthbar armor">
+			<div class="inner">
+				<div class="fill" style="width: @(Player.Armor / Player.MaxArmor * 100f)%"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hotbar">
+		@for(int i=0; i<Player.Slots; i++)
+		{
+			<div class="slot @((Player.ActiveSlot == i) ? "active" : "")" >
+				@if(i < Player.Inventory.Count)
+				{
+					<p>@Player.Inventory[i]</p>
+				}
+			</div>
+		}
+	</div>
+</root>
+
+@code
+{
+	[Property] UnitInfo Player { get; set;}
+
+	protected override int BuildHash() 
+	{
+		return System.HashCode.Combine( Player.Coin, Player.Health, Player.ActiveSlot );
+	} 
+}

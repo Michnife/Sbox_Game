@@ -60,7 +60,7 @@
     {
       "Id": "42b82b65-516c-4061-94d5-a70fbcc813bf",
       "Name": "GameObject",
-      "Position": "26.80461,-88.39737,64.00003",
+      "Position": "-36.03605,-85.87379,64.00003",
       "Rotation": "0,-0,-0.721154,0.6927748",
       "Enabled": true,
       "__Prefab": "prefab/player.prefab"
@@ -71,6 +71,56 @@
       "Position": "-51.348,-618.1733,1.565102",
       "Enabled": true,
       "__Prefab": "prefab/snot.prefab"
+    },
+    {
+      "Id": "23828c53-c1e4-4eef-912f-e985696a9918",
+      "Name": "UI",
+      "Position": "-40.21338,38.15587,365.9184",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "aad15a87-5f9a-4813-b7da-f03963a31545",
+          "Name": "Screen_pause",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ScreenPanel",
+              "AutoScreenScale": true,
+              "Opacity": 0.5,
+              "Scale": 1,
+              "ZIndex": 50
+            },
+            {
+              "__type": "PauseMenu",
+              "MyStringValue": "Hello World!"
+            }
+          ]
+        },
+        {
+          "Id": "023af84c-eb19-4eff-93c5-fd43a3c88dc9",
+          "Name": "Screen_hud",
+          "Position": "-9.714745,-11.57926,-22.09689",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ScreenPanel",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 100
+            },
+            {
+              "__type": "PlayerHud",
+              "Player": {
+                "_type": "component",
+                "go": "42b82b65-516c-4061-94d5-a70fbcc813bf",
+                "component_type": "UnitInfo"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -96,6 +146,6 @@
   },
   "Title": "level_1",
   "Description": "",
-  "LastSaved": "2024-02-25T15:22:51.5268483\u002B01:00",
+  "LastSaved": "2024-02-25T22:38:52.1026373\u002B01:00",
   "__references": []
 }

@@ -29,15 +29,15 @@ public sealed class UnitInfo : Component
 	/// Max health of the unit, clamps health from 0 to MaxHealth
 	/// </summary>
 	[Property]
-	[Range( 0.1f, 10f, 0.1f )]
-	public float MaxHealth { get; set; } = 5f;
+	[Range( 0.1f, 100f, 1f )]
+	public float MaxHealth { get; set; } = 100f;
 
 	/// <summary>
 	/// How many HP are regenerated each second out of combat
 	/// </summary>
 	[Property]
 	[Range( 0f, 2f, 0.1f )]
-	public float HealthRegenAmount { get; set; } = 0.5f;
+	public float HealthRegenAmount { get; set; } = 2f;
 
 	/// <summary>
 	/// How many seconds out of combat before you start regenerating
@@ -53,7 +53,31 @@ public sealed class UnitInfo : Component
 	[Range( 0f, 2f, 0.1f )]
 	public float DelayDeath { get; set; } = 0f;
 
-	public float Health { get; private set; }
+	[Property]
+	[Range( 0f, 100f, 1f )]
+	public float Armor { get; set; } = 50f;
+
+	[Property]
+	[Range( 0.1f, 100f, 1f )]
+	public float MaxArmor { get; set; } = 100f;
+
+	[Property]
+	public int Coin { get; set; } = 0;
+
+	[Property]
+	public List<String> Inventory { get; set; } = new List<string>
+	{
+		"weapon_pistol"
+	};
+	public int ActiveSlot = 0;
+	public int Slots => 9;
+
+	/// <summary>
+	/// Health Point
+	/// </summary>
+	[Property]
+	[Range( 0f, 100f, 1f )]
+	public float Health { get; private set; } = 50f;
 
 	public bool Alive { get; private set; } = true;
 
@@ -65,6 +89,12 @@ public sealed class UnitInfo : Component
 
 	protected override void OnUpdate()
 	{
+		if( Input.MouseWheel.y != 0)
+		{
+			ActiveSlot = (ActiveSlot + Math.Sign(Input.MouseWheel.y)) % Slots;
+			Log.Info(ActiveSlot);
+		}
+
 		if ( _lastDamage >= HealthRegenTimer && Health != MaxHealth && Alive )
 		{
 			if ( _nextHeal )
@@ -77,7 +107,7 @@ public sealed class UnitInfo : Component
 
 	protected override void OnStart()
 	{
-		Health = MaxHealth;
+		//Health = MaxHealth;
 	}
 
 	/// <summary>
