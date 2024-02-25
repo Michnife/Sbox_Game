@@ -66,12 +66,13 @@
         "JumpStrength": 400,
         "PunchCooldown": 1,
         "PunchRange": 90,
-        "PunchStrength": 2,
+        "PunchStrength": 1,
         "RunSpeed": 250,
         "WalkSpeed": 120
       },
       {
         "__type": "UnitInfo",
+        "DelayDeath": 0,
         "HealthRegenAmount": 0.5,
         "HealthRegenTimer": 3,
         "MaxHealth": 5,

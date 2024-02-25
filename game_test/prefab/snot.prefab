@@ -6,6 +6,7 @@
     "Components": [
       {
         "__type": "UnitInfo",
+        "DelayDeath": 1,
         "HealthRegenAmount": 0.3,
         "HealthRegenTimer": 5,
         "MaxHealth": 3,
@@ -30,6 +31,19 @@
         "Radius": 30.699871,
         "Static": false,
         "Surface": null
+      },
+      {
+        "__type": "SnotComponent",
+        "Info": {
+          "_type": "component",
+          "go": "70da0293-f01e-4756-b294-8dca27cc717a",
+          "component_type": "UnitInfo"
+        },
+        "Model": {
+          "_type": "component",
+          "go": "70da0293-f01e-4756-b294-8dca27cc717a",
+          "component_type": "SkinnedModelRenderer"
+        }
       }
     ],
     "Children": []
