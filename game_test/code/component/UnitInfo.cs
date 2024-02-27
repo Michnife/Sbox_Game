@@ -91,6 +91,8 @@ public sealed class UnitInfo : Component
 	{
 		if( Input.MouseWheel.y != 0)
 		{
+			if(ActiveSlot < 0)
+				ActiveSlot = 9;
 			ActiveSlot = (ActiveSlot + Math.Sign(Input.MouseWheel.y)) % Slots;
 			Log.Info(ActiveSlot);
 		}

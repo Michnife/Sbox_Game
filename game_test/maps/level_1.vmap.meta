@@ -21,5 +21,8 @@
         "SingleAssetSource": "maps/level_1.vmap"
       }
     }
-  }
+  },
+  "tags": [
+    "Dev"
+  ]
 }

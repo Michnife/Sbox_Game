@@ -2,21 +2,6 @@
   "Id": "7ba3de82-fabe-42fe-9220-dc46feccc500",
   "GameObjects": [
     {
-      "Id": "aa928920-54cc-4375-8e0e-456dc9bc4ae6",
-      "Name": "Map",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "MapInstance",
-          "MapName": "maps/level_1.vmap",
-          "OnMapLoaded": null,
-          "OnMapUnloaded": null,
-          "UseMapFromLaunch": false
-        }
-      ],
-      "Children": []
-    },
-    {
       "Id": "50d2518f-6093-4aed-bf27-a176639ae6c0",
       "Name": "2D Skybox",
       "Tags": "skybox",
@@ -138,6 +123,58 @@
           ]
         }
       ]
+    },
+    {
+      "Id": "2eda11eb-1760-4c87-8953-dd9198f88144",
+      "Name": "Object",
+      "Position": "-38.97861,46.86079,386.5273",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "MapInstance",
+          "MapName": "maps/level_1.vmap",
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "Id": "753ce9a0-a478-4ba1-83f4-1241fc8af10d",
+      "Name": "Object",
+      "Position": "180.2708,-183.2156,27.96631",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SkinnedModelRenderer",
+          "AnimationGraph": null,
+          "BodyGroups": 18446744073709551615,
+          "BoneMergeTarget": null,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": false,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "49.99994,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "BlockTest",
+          "test_": {
+            "_type": "gameobject",
+            "go": "753ce9a0-a478-4ba1-83f4-1241fc8af10d"
+          }
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -163,6 +200,6 @@
   },
   "Title": "level_1",
   "Description": "",
-  "LastSaved": "2024-02-26T23:52:27.5793046\u002B01:00",
+  "LastSaved": "2024-02-27T21:36:10.1852985\u002B01:00",
   "__references": []
 }
