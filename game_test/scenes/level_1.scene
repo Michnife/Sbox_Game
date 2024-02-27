@@ -87,13 +87,12 @@
             {
               "__type": "ScreenPanel",
               "AutoScreenScale": true,
-              "Opacity": 0.5,
+              "Opacity": 1,
               "Scale": 1,
               "ZIndex": 50
             },
             {
-              "__type": "PauseMenu",
-              "MyStringValue": "Hello World!"
+              "__type": "PauseMenu"
             }
           ]
         },
@@ -117,6 +116,24 @@
                 "go": "42b82b65-516c-4061-94d5-a70fbcc813bf",
                 "component_type": "UnitInfo"
               }
+            }
+          ]
+        },
+        {
+          "Id": "27910851-c4f4-4298-a267-bf0347e8c5e3",
+          "Name": "Screen_f4",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ScreenPanel",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 100
+            },
+            {
+              "__type": "MenuF4"
             }
           ]
         }
@@ -146,6 +163,6 @@
   },
   "Title": "level_1",
   "Description": "",
-  "LastSaved": "2024-02-25T22:38:52.1026373\u002B01:00",
+  "LastSaved": "2024-02-26T23:52:27.5793046\u002B01:00",
   "__references": []
 }

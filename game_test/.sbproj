@@ -82,6 +82,11 @@
           "Name": "Run",
           "KeyboardCode": "SHIFT",
           "GroupName": "Other"
+        },
+        {
+          "Name": "Menu",
+          "KeyboardCode": "Y",
+          "GroupName": "Other"
         }
       ]
     }
