@@ -83,6 +83,14 @@
         "MaxArmor": 100,
         "MaxHealth": 100,
         "Team": "Player"
+      },
+      {
+        "__type": "BoxCollider",
+        "Center": "-0.5000001,-2.499998,30.50005",
+        "IsTrigger": false,
+        "Scale": "17.39997,39.80007,83.89993",
+        "Static": false,
+        "Surface": null
       }
     ],
     "Children": [

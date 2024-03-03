@@ -127,7 +127,7 @@
     {
       "Id": "2eda11eb-1760-4c87-8953-dd9198f88144",
       "Name": "Object",
-      "Position": "-38.97861,46.86079,386.5273",
+      "Position": "-31.19684,46.86079,386.5273",
       "Enabled": true,
       "Components": [
         {
@@ -143,15 +143,48 @@
     {
       "Id": "753ce9a0-a478-4ba1-83f4-1241fc8af10d",
       "Name": "Object",
-      "Position": "180.2708,-183.2156,27.96631",
+      "Position": "180.2708,-183.2156,26.33764",
       "Enabled": true,
       "Components": [
         {
-          "__type": "SkinnedModelRenderer",
-          "AnimationGraph": null,
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "BoxTrigger"
+        },
+        {
+          "__type": "ModelRenderer",
           "BodyGroups": 18446744073709551615,
-          "BoneMergeTarget": null,
-          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "7c2ae3a4-3b20-4cb7-9be5-609edfb775a3",
+      "Name": "Object (1)",
+      "Position": "180.2708,78.42737,26.33764",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
           "Model": null,
@@ -159,20 +192,7 @@
           "Tint": "1,1,1,1"
         },
         {
-          "__type": "BoxCollider",
-          "__enabled": false,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "49.99994,50,50",
-          "Static": false,
-          "Surface": null
-        },
-        {
-          "__type": "BlockTest",
-          "test_": {
-            "_type": "gameobject",
-            "go": "753ce9a0-a478-4ba1-83f4-1241fc8af10d"
-          }
+          "__type": "BoxTriggerHp"
         }
       ]
     }
@@ -200,6 +220,6 @@
   },
   "Title": "level_1",
   "Description": "",
-  "LastSaved": "2024-02-27T21:36:10.1852985\u002B01:00",
+  "LastSaved": "2024-03-03T18:29:05.8742481\u002B01:00",
   "__references": []
 }

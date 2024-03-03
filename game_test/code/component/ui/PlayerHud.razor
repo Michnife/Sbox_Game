@@ -41,6 +41,6 @@
 
 	protected override int BuildHash() 
 	{
-		return System.HashCode.Combine( Player.Coin, Player.Health, Player.ActiveSlot );
+		return System.HashCode.Combine( Player.Coin, Player.Health, Player.ActiveSlot, Player.Armor, Player.MaxHealth, Player.MaxArmor );
 	} 
 }

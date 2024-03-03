@@ -77,7 +77,7 @@ public sealed class UnitInfo : Component
 	/// </summary>
 	[Property]
 	[Range( 0f, 100f, 1f )]
-	public float Health { get; private set; } = 50f;
+	public float Health { get; set; } = 50f;
 
 	public bool Alive { get; private set; } = true;
 

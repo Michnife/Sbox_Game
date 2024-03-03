@@ -1,13 +1,11 @@
 using Sandbox;
-using System;
 
-public sealed class BoxTrigger : Component, Component.ITriggerListener
+public sealed class BoxTriggerHpAdd : Component, Component.ITriggerListener
 {
 	public void OnTriggerEnter( Collider other)
 	{
-		Log.Info("Trigger");
 		var player = other.Components.Get<UnitInfo>();
-		player.Health = player.Health - 100;
+		player.Health = player.MaxHealth;
 	}
 	public void OnTriggerExit( Collider other)
 	{
