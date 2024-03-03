@@ -10,20 +10,20 @@ public sealed class BoxTriggerRemoveHp : Component, Component.ITriggerListener
 	public void OnTriggerEnter( Collider other)
 	{
 		var player = other.Components.Get<UnitInfo>();
-		float copy = damage;
-		if( damage - player.Armor < 0) {
-			copy = copy - player.Armor;
-			Log.Info("copy :");
-			Log.Info(copy);
-			player.Armor = 0;
-			player.Health = player.Health - copy;
-			Log.Info("player.Health :");
-			Log.Info(player.Health);
-		}
-		if( damage - player.Armor > 0) {
-			Log.Info("no");
-			player.Armor = player.Armor - damage;
-		}
+        if (damage <= player.Armor)
+        {
+            player.Armor -= damage;
+        }
+        else
+        {
+            float damageRestants = damage - player.Armor;
+            player.Armor = 0;
+            player.Health -= damageRestants;
+        }
+
+        // Limiter les valeurs à leurs maximums
+        player.Health = Math.Max(player.Health, 0);
+        player.Armor = Math.Max(player.Armor, 0);
 	}
 	public void OnTriggerExit( Collider other)
 	{

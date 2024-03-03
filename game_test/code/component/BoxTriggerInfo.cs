@@ -1,11 +1,13 @@
 using Sandbox;
 
-public sealed class BoxTriggerShieldMax : Component, Component.ITriggerListener
+public sealed class BoxTriggerInfo : Component, Component.ITriggerListener
 {
 	public void OnTriggerEnter( Collider other)
 	{
 		var player = other.Components.Get<UnitInfo>();
-		player.Armor = player.MaxArmor;
+		Log.Info(player.Health);
+		Log.Info(player.Armor);
+
 	}
 	public void OnTriggerExit( Collider other)
 	{

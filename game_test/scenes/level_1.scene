@@ -143,7 +143,7 @@
     {
       "Id": "753ce9a0-a478-4ba1-83f4-1241fc8af10d",
       "Name": "Object",
-      "Position": "180.2708,-183.2156,26.33764",
+      "Position": "301.1561,82.18894,26.33764",
       "Enabled": true,
       "Components": [
         {
@@ -164,14 +164,14 @@
           "MaterialOverride": null,
           "Model": null,
           "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "1,0.38605,0.38605,1"
         }
       ]
     },
     {
       "Id": "7c2ae3a4-3b20-4cb7-9be5-609edfb775a3",
       "Name": "Object (1)",
-      "Position": "180.2708,78.42737,26.33764",
+      "Position": "179.865,78.42737,26.33764",
       "Enabled": true,
       "Components": [
         {
@@ -193,6 +193,147 @@
         },
         {
           "__type": "BoxTriggerHp"
+        }
+      ]
+    },
+    {
+      "Id": "136a9089-22b6-46bc-9f38-1dd94e317787",
+      "Name": "Object (5)",
+      "Position": "86.21941,78.42737,26.33764",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "0.84286,0.9907,0.63589,1"
+        },
+        {
+          "__type": "BoxTriggerHpAdd"
+        }
+      ]
+    },
+    {
+      "Id": "e509387d-af21-43c0-9839-72a6121dcba0",
+      "Name": "Object (2)",
+      "Position": "179.865,-211.4861,26.33764",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxTriggerShield"
+        }
+      ]
+    },
+    {
+      "Id": "9a65184f-2da6-48e6-a93f-c482be5187a4",
+      "Name": "Object (6)",
+      "Position": "82.33122,-211.4861,26.33764",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        },
+        {
+          "__type": "BoxTriggerInfo"
+        }
+      ]
+    },
+    {
+      "Id": "f0bcdf04-c18a-484d-a533-d113df740716",
+      "Name": "Object (3)",
+      "Position": "310.7197,-211.465,26.33764",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "0.67046,0.913,0.96744,1"
+        },
+        {
+          "__type": "BoxTriggerShieldMax"
+        }
+      ]
+    },
+    {
+      "Id": "6cc184c0-7891-4fba-8efa-5de96ccc327b",
+      "Name": "Object (4)",
+      "Position": "418.5524,-69.27463,26.33764",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": null,
+          "RenderType": "On",
+          "Tint": "0.97674,0.27712,0.37041,1"
+        },
+        {
+          "__type": "BoxTriggerRemoveHp",
+          "damage": 40
         }
       ]
     }
@@ -220,6 +361,6 @@
   },
   "Title": "level_1",
   "Description": "",
-  "LastSaved": "2024-03-03T18:29:05.8742481\u002B01:00",
+  "LastSaved": "2024-03-03T19:26:12.8104502\u002B01:00",
   "__references": []
 }
